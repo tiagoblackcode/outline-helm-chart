@@ -1,0 +1,48 @@
+apiVersion: v1
+entries:
+  outline:
+  - apiVersion: v1
+    appVersion: 0.62.0
+    created: "2022-05-24T15:12:27.870828905Z"
+    dependencies:
+    - alias: postgresql
+      condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.12.2
+    - alias: redis
+      condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.4.1
+    - alias: minio
+      condition: minio.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.2.0
+    description: The outline helm chart to deploy outline in kubernetes clusters.
+    digest: 612aca771f8c288959abd99d4704b01241ab5c7c0af8c47d18b19694034b45bc
+    home: https://encircle360.com
+    keywords:
+    - outline
+    - wiki
+    - helm
+    - chart
+    - kubernetes
+    - s3
+    - minio
+    - postgresql
+    - mongodb
+    - knowledge
+    maintainers:
+    - email: hello@encircle360.com
+      name: encircle360 GmbH
+      url: https://encircle360.com
+    name: outline
+    sources:
+    - https://gitlab.com/encircle360-oss/helm-charts/outline
+    - https://github.com/encircle360-oss/outline-helm-chart
+    urls:
+    - https://github.com/tiagoblackcode/outline-helm-chart/releases/download/outline-0.0.5/outline-0.0.5.tgz
+    version: 0.0.5
+generated: "2022-05-24T15:12:27.870844905Z"
